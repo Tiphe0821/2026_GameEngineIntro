@@ -1,4 +1,6 @@
 using System.Numerics;
+using NUnit.Framework;
+using UnityEditor.Callbacks;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UIElements.Experimental;
@@ -8,13 +10,16 @@ public class PlayerController : MonoBehaviour
 
     private UnityEngine.Vector2 moveInput;
     private bool isSprint;
-    private bool isJump;
+    public float jumpForce = 7f;
     public float moveSpeed;
+    private Rigidbody2D rb;
+    private Animator myAnimator;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        rb = GetComponent<Rigidbody2D>();
+        myAnimator = GetComponent<Animator>();
     }
 
     public void OnMove(InputValue value)
@@ -22,14 +27,24 @@ public class PlayerController : MonoBehaviour
         moveInput = value.Get<UnityEngine.Vector2>();
     }
 
-    public void OnSprint(InputValue value)
+    public void OnSprint()
     {
-        isSprint = value.isPressed;
+        if(isSprint)
+        {
+            isSprint = false;
+        }
+        else
+        {
+            isSprint = true;
+        }
     }
 
     public void OnJump(InputValue value)
     {
-        isJump = value.isPressed;
+        if(value.isPressed) // 점프 버튼을 누르면
+        {
+            rb.linearVelocity = new UnityEngine.Vector2(rb.linearVelocity.x, jumpForce);
+        }
     }
 
     // Update is called once per frame
@@ -40,19 +55,26 @@ public class PlayerController : MonoBehaviour
             transform.localScale = new UnityEngine.Vector3(1, 1, 1);
         }
         else if(moveInput.x < 0)
-        {
+        { 
             transform.localScale = new UnityEngine.Vector3(-1, 1, 1);
         }
 
-        if (isSprint)
+        if(moveInput.magnitude > 0)
         {
-            transform.Translate(UnityEngine.Vector3.right * moveInput.x * moveSpeed * 2.0f * Time.deltaTime);
-            transform.Translate(UnityEngine.Vector3.up * moveInput.y * moveSpeed * 2.0f * Time.deltaTime);
+            myAnimator.SetBool("move", true);
+
+            if (isSprint)
+            {
+                transform.Translate(UnityEngine.Vector3.right * moveInput.x * moveSpeed * 2.0f * Time.deltaTime);
+            }
+            else
+            {
+                transform.Translate(UnityEngine.Vector3.right * moveInput.x * moveSpeed * Time.deltaTime);
+            }
         }
         else
         {
-            transform.Translate(UnityEngine.Vector3.right * moveInput.x * moveSpeed * Time.deltaTime);
-            transform.Translate(UnityEngine.Vector3.up * moveInput.y * moveSpeed * Time.deltaTime);
+            myAnimator.SetBool("move", false);
         }
     }
 }
