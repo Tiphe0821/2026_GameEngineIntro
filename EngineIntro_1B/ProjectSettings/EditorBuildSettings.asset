@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PlayScene_Door2.unity
     guid: 40cf9f21d7c75004da7177cffdc24f5f
+  - enabled: 1
+    path: Assets/Scenes/PlayScene_Door3.unity
+    guid: 922d0f3cb0bc30640a69637ab962e149
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

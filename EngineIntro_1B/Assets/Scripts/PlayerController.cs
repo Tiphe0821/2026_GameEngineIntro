@@ -50,7 +50,15 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D Collision)
     {
-        SceneManager.LoadScene("PlayScene_" +  Collision.name);
+
+        if(Collision.name == "Death")
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+        else
+        {
+            SceneManager.LoadScene("PlayScene_" + Collision.name);
+        }
     }
 
     void Update()
