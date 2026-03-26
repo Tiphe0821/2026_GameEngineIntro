@@ -3,6 +3,7 @@ using NUnit.Framework;
 using UnityEditor.Callbacks;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 using UnityEngine.UIElements.Experimental;
 
 public class PlayerController : MonoBehaviour
@@ -47,7 +48,11 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
+    private void OnTriggerEnter2D(Collider2D Collision)
+    {
+        SceneManager.LoadScene("PlayScene_" +  Collision.name);
+    }
+
     void Update()
     {
         if(moveInput.x > 0)
