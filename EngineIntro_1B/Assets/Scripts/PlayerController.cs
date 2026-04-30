@@ -1,11 +1,7 @@
-using System.Numerics;
-using NUnit.Framework;
-using UnityEditor.Callbacks;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
-using UnityEngine.UIElements.Experimental;
-
+using UnityEngine.SocialPlatforms.Impl;
 public class PlayerController : MonoBehaviour
 {
 
@@ -15,6 +11,8 @@ public class PlayerController : MonoBehaviour
     public float moveSpeed;
     private Rigidbody2D rb;
     private Animator myAnimator;
+
+    float score;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -48,16 +46,25 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D Collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
 
-        if(Collision.name == "Death")
+        if(collision.name == "Death")
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
         else
         {
-            SceneManager.LoadScene("PlayScene_" + Collision.name);
+            SceneManager.LoadScene("PlayScene_" + collision.name);
+        }
+
+        if(collision.CompareTag("Finish"))
+        {
+            HighScore.TrySet(SceneManager.GetActiveScene().buildIndex, (int)score);
+        }
+        if(collision.CompareTag("Item"))
+        {
+            score += 10.0f;
         }
     }
 

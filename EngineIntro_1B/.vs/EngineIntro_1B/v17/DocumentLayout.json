@@ -1,18 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\GameEngineIntro_1B_JHC\\2026_GameEngineIntro\\EngineIntro_1B\\",
+  "WorkspaceRootPath": "C:\\Users\\namuc\\Desktop\\GitHub_Temp\\2026_GameEngineIntro\\EngineIntro_1B\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2695C9FF-4B83-63F1-CC69-4CD6C8EAE188}|Assembly-CSharp.csproj|d:\\gameengineintro_1b_jhc\\2026_gameengineintro\\engineintro_1b\\assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2695C9FF-4B83-63F1-CC69-4CD6C8EAE188}|Assembly-CSharp.csproj|c:\\users\\namuc\\desktop\\github_temp\\2026_gameengineintro\\engineintro_1b\\assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2695C9FF-4B83-63F1-CC69-4CD6C8EAE188}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2695C9FF-4B83-63F1-CC69-4CD6C8EAE188}|Assembly-CSharp.csproj|D:\\GameEngineIntro_1B_JHC\\2026_GameEngineIntro\\EngineIntro_1B\\assets\\scripts\\camerafollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2695C9FF-4B83-63F1-CC69-4CD6C8EAE188}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\camerafollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2695C9FF-4B83-63F1-CC69-4CD6C8EAE188}|Assembly-CSharp.csproj|D:\\GameEngineIntro_1B_JHC\\2026_GameEngineIntro\\EngineIntro_1B\\assets\\scripts\\titlemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2695C9FF-4B83-63F1-CC69-4CD6C8EAE188}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\titlemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2695C9FF-4B83-63F1-CC69-4CD6C8EAE188}|Assembly-CSharp.csproj|c:\\users\\namuc\\desktop\\github_temp\\2026_gameengineintro\\engineintro_1b\\assets\\scripts\\highscore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2695C9FF-4B83-63F1-CC69-4CD6C8EAE188}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\highscore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,43 +18,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TitleManager.cs",
-              "DocumentMoniker": "D:\\GameEngineIntro_1B_JHC\\2026_GameEngineIntro\\EngineIntro_1B\\Assets\\Scripts\\TitleManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\TitleManager.cs",
-              "ToolTip": "D:\\GameEngineIntro_1B_JHC\\2026_GameEngineIntro\\EngineIntro_1B\\Assets\\Scripts\\TitleManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\TitleManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-26T06:34:34.311Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CameraFollow.cs",
-              "DocumentMoniker": "D:\\GameEngineIntro_1B_JHC\\2026_GameEngineIntro\\EngineIntro_1B\\Assets\\Scripts\\CameraFollow.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\CameraFollow.cs",
-              "ToolTip": "D:\\GameEngineIntro_1B_JHC\\2026_GameEngineIntro\\EngineIntro_1B\\Assets\\Scripts\\CameraFollow.cs",
-              "RelativeToolTip": "Assets\\Scripts\\CameraFollow.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-26T05:49:53.452Z"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "PlayerController.cs",
-              "DocumentMoniker": "D:\\GameEngineIntro_1B_JHC\\2026_GameEngineIntro\\EngineIntro_1B\\Assets\\Scripts\\PlayerController.cs",
+              "DocumentMoniker": "C:\\Users\\namuc\\Desktop\\GitHub_Temp\\2026_GameEngineIntro\\EngineIntro_1B\\Assets\\Scripts\\PlayerController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerController.cs",
-              "ToolTip": "D:\\GameEngineIntro_1B_JHC\\2026_GameEngineIntro\\EngineIntro_1B\\Assets\\Scripts\\PlayerController.cs",
+              "ToolTip": "C:\\Users\\namuc\\Desktop\\GitHub_Temp\\2026_GameEngineIntro\\EngineIntro_1B\\Assets\\Scripts\\PlayerController.cs",
               "RelativeToolTip": "Assets\\Scripts\\PlayerController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-26T04:36:41.714Z",
+              "WhenOpened": "2026-04-30T05:24:33.766Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HighScore.cs",
+              "DocumentMoniker": "C:\\Users\\namuc\\Desktop\\GitHub_Temp\\2026_GameEngineIntro\\EngineIntro_1B\\Assets\\Scripts\\HighScore.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\HighScore.cs",
+              "ToolTip": "C:\\Users\\namuc\\Desktop\\GitHub_Temp\\2026_GameEngineIntro\\EngineIntro_1B\\Assets\\Scripts\\HighScore.cs",
+              "RelativeToolTip": "Assets\\Scripts\\HighScore.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-30T05:20:09.382Z",
               "EditorCaption": ""
             }
           ]
